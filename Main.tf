@@ -1,19 +1,6 @@
-variable "AWS_ACCESS_KEY" {
-  type = string
-}
-
-variable "AWS_SECRET_ACCESS_KEY" {
-  type = string
-}
-
-variable "AWS_REGION" {
-  type = string
-}
-
 provider "aws" {
-  region     = var.AWS_REGION
-  access_key = var.AWS_ACCESS_KEY
-  secret_key = var.AWS_SECRET_ACCESS_KEY
+  region     = "eu-west-1"
+ 
 }
 
 module "s3_bucket" {
