@@ -6,7 +6,7 @@ provider "aws" {
 module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
-  bucket = "my-s3-bucket-79029856756753"
+  bucket = "my-s3-bucket-7902985675675328783782"
   acl    = "private"
 
   versioning = {
